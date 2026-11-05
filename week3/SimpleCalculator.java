@@ -16,13 +16,13 @@ public class SimpleCalculator {
         double result;
         switch (op) {
             case '+':
-                result = a + b;
+                result = b + c;
                 break;
             case '-':
-                result = a - b;
+                result = b - c;
                 break;
             case '*':
-                result = a * b;
+                result = b * c;
                 break;
             case '/':
                 if (b == 0) {
@@ -30,7 +30,7 @@ public class SimpleCalculator {
                     input.close();
                     return;
                 }
-                result = a / b;
+                result = b / c;
                 break;
             default:
                 System.out.println("Error: invalid operator '" + op + "'.");
@@ -38,7 +38,7 @@ public class SimpleCalculator {
                 return;
         }
  
-        System.out.println(a + " " + op + " " + b + " = " + result);
+        System.out.println(b + " " + op + " " + c + " = " + result);
         input.close();
     }
 }
